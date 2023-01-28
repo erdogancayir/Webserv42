@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My HTML Page with CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*
+{
+  font-family: raleway;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: fixed;
+  overflow-x: hidden;
+}
+
+.card
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+  height: 500px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.card img
+{
+  width: 85%;
+  border-radius: 300px;
+  animation: mymove 5s linear infinite;
+  transition: 0.4s all;
+  margin-top: -20px;
+}
+
+.card img:hover
+{
+  filter:contrast(200%);
+}
+
+@keyframes mymove
+{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+h2
+{
+  font-size: 40px;
+   background: -webkit-linear-gradient(45deg, blue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+audio
+{
+  width: 90%;
+  margin-top: 12px;
+  border: 5px solid #000;
+  border-radius: 50px;
+  outline: none;
+}
+
+.cr
+{
+  font-size: 15px;
+  color: #fff;
+}
+
+hr
+{
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 350px) {
+  .card {
+    width: 95%;
+  }
+}
+    </style>
+  </head>
+
+    <body>
+        <div class="card">
+            <center>
+            <h2>CANODIS</h2>
+            <img src="https://images.8tracks.com/cover/i/000/313/145/anime-music-widescreen-original-693454-3168.jpg?rect=0,0,500,500&q=98&fm=jpg&fit=max" alt="Image">
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/CAL4WMpBNs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <hr>
+              <span class="cr">
+                Copyright 2020 | All Rights Reserved
+              </span>
+            </center>
+          </div>
+    </body>
+
+</html>
+
+<script>
+
+</script>

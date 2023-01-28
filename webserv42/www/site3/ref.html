@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>My HTML Page with CSS</title>
+	<html>
+  <head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<title>The World of Sasskar</title>
+  </head>
+  <body>
+	<!-- nav -->
+	<nav class="navbar navbar-default navbar-fixed-top nav navbar-nav">
+	  <a href="#">42</a>|
+	  <a href="#about">ECOLE</a>|
+	  <a href="#portfolio">WEBSERV</a>
+	</nav>
+	<!-- end nav -->
+	
+	<!-- start sections -->
+	<!-- 0 -->
+	<div id="home">
+	  <section>
+		<h1 class="sneha">CAN - OMER - ERDOG</h1>
+	  </section>
+	</div>
+	<!-- 1 -->
+	<div id="about">
+	  <!-- <section>
+		<div class="para">
+		  filler
+	
+		</div>
+		<div class="row foot">
+		  <div class="foot-item col-md-1 col-md-offset-4 col-xs-2 col-xs-offset-2">
+			<a href="https://www.instagram.com/snehasanks/"><span class="glyphicon glyphicon-heart-empty"></span></a>
+		  </div>
+		  <div class="foot-item col-md-1 col-xs-2">
+			<a href="https://www.facebook.com/snehasanks?fref=ts"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+		  </div>
+		  <div class="foot-item col-md-1 col-xs-2">
+			<a href="https://www.behance.net/snehasankar"><span class="glyphicon glyphicon-certificate"></span></a>
+		  </div>
+		  <div class="foot-item col-md-1 col-xs-2">
+			<a href="https://www.behance.net/gallery/26197195/Rsum"><span class="glyphicon glyphicon-education"></span></a>
+		  </div>
+		</div>
+	  </section> -->
+	</div>
+	<!-- 2 -->
+	<div id="portfolio">
+	  <section>
+		<div class="photos container-fluid">
+		  <a href="https://github.com/canodis"><img class="img-responsive" src="https://pps.whatsapp.net/v/t61.24694-24/167131401_658052602312217_1985527518883508222_n.jpg?ccb=11-4&oh=01_AdS8FrO2IsiRWdUhEIvI4x0kBERN8yLKecZ1A-96UcTiOQ&oe=63E0B76D" /></a>
+		  <a href="https://github.com/hiqermod"><img class="img-responsive" src="https://media.licdn.com/dms/image/C4D03AQEjzGLF9bAqcA/profile-displayphoto-shrink_800_800/0/1653063157340?e=1680134400&v=beta&t=7qGhjmvs5bsBc0ijR5M7Lyn6d3SpotsOIGswQiGq0WA" /></a>
+		  <a href="https://github.com/erdogancayir"><img src="https://pps.whatsapp.net/v/t61.24694-24/312218564_8713766338641448_5149353037934986203_n.jpg?ccb=11-4&oh=01_AdQm1g1Y9e8jaMyakBM9d4zXOKp_nzlkzoIa8AJ7HEQa7A&oe=63E0CF67"/></a>
+		</div>
+	  </section>
+	</div>
+	<!-- end sections -->
+  </body>
+</html>
+	<style>
+	  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+.sneha {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  color: #e24e42;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 !important;
+}
+
+nav {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border: none !important;
+  font-family: 'Quicksand', sans-serif;
+  color: #e24e42;
+  text-align: center !important;
+}
+
+nav a {
+  text-decoration: none !important;
+  color: inherit !important;
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+nav a .current {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+section {
+  height: 100vh;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  position: relative;
+  margin-top: 0 !important;
+}
+
+#home {
+  background: url("https://42kocaeli.com.tr/wp-content/uploads/2022/07/social-media.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about {
+  background-color: #d5d5d5;
+  background-attachment: fixed;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+#about .para {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #1e392a;
+  font-size: 70px;
+  letter-spacing: .25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+}
+
+#about .foot {
+  position: relative;
+  top: 90%;
+}
+
+#about .foot-item {
+  text-align: center;
+  font-size: 20px;
+}
+
+#about .foot-item a {
+  text-decoration: none;
+  color: grey;
+}
+
+#about .foot-item a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-sneha {
+  height: 20vh !important;
+  margin: 30px !important;
+}
+
+.img-sneha img {
+  display: block !important;
+  margin: 0 auto !important;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#portfolio {
+  background: ivory;
+  position: relative;
+}
+
+#portfolio .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+#portfolio .photos img {
+  display: inline-block;
+  padding: 4px;
+}
+
+#portfolio .photos img:hover {
+  opacity: 0.7;
+}
+
+a {
+  target: "_blank";
+}
+</style>
+  </head>
+
+</html>
