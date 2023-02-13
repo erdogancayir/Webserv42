@@ -61,7 +61,7 @@ void	reqHandler::close_connection(std::vector<Client*>::iterator cl, std::string
 	this->findMaxFd();
 }
 
-void	reqHandler::readProc(Webserv *websv)
+void	reqHandler::readProc(void)
 {
 	int	readed;
 	char buffer[4096] = {0};
@@ -82,8 +82,6 @@ void	reqHandler::readProc(Webserv *websv)
 					{
 						if (this->allowChecker((*cliIt)) == -1)
 							close_connection(cliIt, forbiddenPage, true);
-						else if (this->findMySv((*cliIt), websv) == -1)
-							close_connection(cliIt, errorPage, true);
 						else
 						{
 							if ((*cliIt)->method == "DELETE")

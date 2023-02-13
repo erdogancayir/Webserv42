@@ -23,9 +23,8 @@ class reqHandler : handleCgi
 
 		void					findMaxFd();
 		void					acceptProc(Webserv *websv);
-		void					readProc(Webserv *websv);
+		void					readProc(void);
 		void					writeProc(void);
-		int						findMySv(Client *cli, Webserv *websv);
 		int						allowChecker(Client *cli);
 		std::string				add_headers(std::string htmlstr, std::string type);
 		int						deleteProc(Client *cli);

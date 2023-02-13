@@ -140,27 +140,6 @@ void	reqHandler::findMaxFd()
 	}
 }
 
-int	reqHandler::findMySv(Client *cli, Webserv *websv)
-{
-	for(std::list<std::string>::iterator svNameIt = cli->sv->server_names.begin(); svNameIt != cli->sv->server_names.end(); svNameIt++)
-	{
-		if (cli->serverName == (*svNameIt))
-			return(1);
-	}
-	for(std::list<Server *>::iterator svIt = websv->_servers.begin(); svIt != websv->_servers.end(); svIt++)
-	{
-		for(std::list<std::string>::iterator svNameIt = (*svIt)->server_names.begin(); svNameIt != (*svIt)->server_names.end(); svNameIt++)
-		{
-			if (cli->serverName == (*svNameIt))
-			{
-				cli->sv = (*svIt);
-				return (1);
-			}
-		}
-	}
-	return (-1);
-}
-
 int	reqHandler::allowChecker(Client *cli)
 {
 	if (cli->method == "DELETE")
@@ -199,7 +178,7 @@ void	reqHandler::listenConn(Webserv *websv)
 			state = select(this->maxFd, &this->supReadFds, &this->supWriteFds, NULL, 0);
 		}
 		this->loopControl = 1;
-		this->readProc(websv);
+		this->readProc();
 		this->writeProc();
 		this->acceptProc(websv);
 	}
