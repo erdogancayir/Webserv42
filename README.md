@@ -15,6 +15,8 @@ How to run ?
 
 ```  ./webserv config/ ``` 
 
+<img width="1119" alt="Ekran Resmi 2023-02-14 ÖS 6 47 50" src="https://user-images.githubusercontent.com/94300378/218787732-3d25853c-ab1b-4231-9794-536e29fac50c.png">
+
 
 
 ![image](https://user-images.githubusercontent.com/94300378/215287887-7654f9b8-c402-4602-96f3-c3bc15b78a78.png)
