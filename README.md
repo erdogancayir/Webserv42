@@ -24,7 +24,8 @@ How to run ?
 ![image](https://user-images.githubusercontent.com/94300378/215287977-48975401-eb59-4cd2-897c-50ccf301805e.png)
 
 
-Features
+```Features```
+
 user provided config file
 IO multiplexing: multiplexing of multiple sockets, using kqueue
 CGI/1.1 (dynamic content)
@@ -32,7 +33,9 @@ HTTP/1.1 Protocol
 downloading a file, i.e. showing a static website (GET)
 uploading a file (POST)
 deleting a file (DELETE)
-Basics
+
+```Basics```
+
 In this project we were challanged to create a webserver with quite a few functionalities that complies with the HTTP/1.1 standard.
 This, on its own is already a challenge when you started coding only 1.5 years ago.
 But to challange us even more we had to mainly use c++98 + and some c functions for alll the cases c++98 has no alternative like sockets and directory handling.
@@ -45,7 +48,8 @@ For this reason our webserv is only running on macOS, since kqueue is not implem
 The implementation of CGI's was a big part of the work too. On our webserv you can have as many cgi-extensions working as you like, as long as the cgi-executable is supplied.
 And last but not least we had to make sure our webserv never crashes and gives back appropriate error codes if something goes wrong.
 
-Config File
+```Config File```
+
 Theses following variables can be set inside the config file:
 
 hostname
