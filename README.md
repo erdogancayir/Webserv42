@@ -21,7 +21,7 @@ How to run ?
 
 ![image](https://user-images.githubusercontent.com/94300378/215287887-7654f9b8-c402-4602-96f3-c3bc15b78a78.png)
 
-![image](https://user-images.githubusercontent.com/94300378/215287977-48975401-eb59-4cd2-897c-50ccf301805e.png)
+
 
 
 ```Features```
