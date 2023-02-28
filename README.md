@@ -54,23 +54,15 @@ Theses following variables can be set inside the config file:
 
 hostname
 
-mutliple ports
-
-turn on/off automatic directory listing
-
-setup of an index file (server-wide and directory specific)
-
-routing for
-
-certain directories
-
-certain file-extensions
-
-allowing methods for certain directories/file-extensions
-
-setup for the cgi
-
-setup of max_client_body_size (max number of bytes allowed in a single file/chunk)
+- mutliple ports
+- turn on/off automatic directory listing
+- setup of an index file (server-wide and directory specific)
+- routing for
+- certain directories
+- certain file-extensions
+- allowing methods for certain directories/file-extensions
+- setup for the cgi
+- setup of max_client_body_size (max number of bytes allowed in a single file/chunk)
 
 Also you are able to setup multiple (virtual) servers in the same config file.
 This will lead the webserver to be able to run multiple configs at the same time and applying them depending on which host was called in the request.
