@@ -26,13 +26,13 @@ How to run ?
 
 ```Features```
 
-user provided config file
-IO multiplexing: multiplexing of multiple sockets, using kqueue
-CGI/1.1 (dynamic content)
-HTTP/1.1 Protocol
-downloading a file, i.e. showing a static website (GET)
-uploading a file (POST)
-deleting a file (DELETE)
+- user provided config file
+- IO multiplexing: multiplexing of multiple sockets, using kqueue
+- CGI/1.1 (dynamic content)
+- HTTP/1.1 Protocol
+- downloading a file, i.e. showing a static website (GET)
+- uploading a file (POST)
+- deleting a file (DELETE)
 
 ```Basics```
 
