@@ -36,17 +36,17 @@ How to run ?
 
 ```Basics```
 
-In this project we were challanged to create a webserver with quite a few functionalities that complies with the HTTP/1.1 standard.
-This, on its own is already a challenge when you started coding only 1.5 years ago.
-But to challange us even more we had to mainly use c++98 + and some c functions for alll the cases c++98 has no alternative like sockets and directory handling.
-First challenge was to have a config file that has a lot of functionalities and works kinda like a config file for nginx.
-The methods to implement where GET POST and DELETE.
-There had to be autoindexing as well as directory/file routing. Especially the directory/file routing is important to hide the actual directory structure of our server to the user that visites a website that is hosted on our server.
-One big and also complicated part was the implementation of chunked requests, because of the multiplexing.
-For our multiplexing we used kqueue, this enabled us to get the events (i.e. client connect, client send a request) directly from the kernel.
-For this reason our webserv is only running on macOS, since kqueue is not implemented in linux.
-The implementation of CGI's was a big part of the work too. On our webserv you can have as many cgi-extensions working as you like, as long as the cgi-executable is supplied.
-And last but not least we had to make sure our webserv never crashes and gives back appropriate error codes if something goes wrong.
+In this project we were challanged to create a webserver with quite a few functionalities that complies with the HTTP/1.1 standard. <br>
+This, on its own is already a challenge when you started coding only 1.5 years ago.<br>
+But to challange us even more we had to mainly use c++98 + and some c functions for alll the cases c++98 has no alternative like sockets and directory handling.<br>
+First challenge was to have a config file that has a lot of functionalities and works kinda like a config file for nginx.<br>
+The methods to implement where GET POST and DELETE.<br>
+There had to be autoindexing as well as directory/file routing. Especially the directory/file routing is important to hide the actual directory structure of our server to the user that visites a website that is hosted on our server.<br>
+One big and also complicated part was the implementation of chunked requests, because of the multiplexing.<br>
+For our multiplexing we used kqueue, this enabled us to get the events (i.e. client connect, client send a request) directly from the kernel.<br>
+For this reason our webserv is only running on macOS, since kqueue is not implemented in linux.<br>
+The implementation of CGI's was a big part of the work too. On our webserv you can have as many cgi-extensions working as you like, as long as the cgi-executable is supplied.<br>
+And last but not least we had to make sure our webserv never crashes and gives back appropriate error codes if something goes wrong.<br>
 
 ```Config File```
 
