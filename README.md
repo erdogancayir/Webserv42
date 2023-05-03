@@ -66,3 +66,11 @@ hostname
 
 Also you are able to setup multiple (virtual) servers in the same config file.
 This will lead the webserver to be able to run multiple configs at the same time and applying them depending on which host was called in the request.
+
+
+
+### Technologies
+
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) Git: Version control system <br>
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) GitHub: Code repository and collaboration platform <br>
