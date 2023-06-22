@@ -35,7 +35,7 @@ How to run ?
 - downloading a file, i.e. showing a static website (GET)
 - uploading a file (POST)
 - deleting a file (DELETE)
-
+ 
 ```Basics```
 
 In this project we were challanged to create a webserver with quite a few functionalities that complies with the HTTP/1.1 standard. <br>
